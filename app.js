@@ -9,16 +9,14 @@ const PORT = 1337;
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.use(cookieParser());
 
 app.set("view engine", "ejs");
 
-
+app.use(cookieParser());
 app.use('/createProfile', routes.createProfile);
 app.use('/profile', routes.profile);
 app.use('/friends',routes.friends);
 app.use('/upload', routes.upload);
-
 
 app.get("/", function(req, res){
 	console.log('Cookies: ', req.cookies);
