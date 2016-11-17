@@ -20,10 +20,12 @@ router.route('/').get(function(req,res){
 });
 router.post('/', upload.any(), function (req, res, next) {
     res.send(filePath);
+    		var filePath = req.files[0].path;
 
-	for (var i = 0; i < req.files.length; i++) {
-		var filePath = req.files[i].path;
-		var imageExifData = [];
+	var imageExifData = [];
+	// for (var i = 0; i < req.files.length; i++) {
+	// 	var filePath = req.files[i].path;
+
 		try {
 			new ExifImage({ image : filePath }, function (error, exifData) {
 				// console.log('this is the exif data', exifData);
@@ -32,13 +34,13 @@ router.post('/', upload.any(), function (req, res, next) {
 				}
 				else {
 					imageExifData.push(exifData);
-					// console.log('this is the metaData', exifData); // Do something with your data!
+					console.log('this is the metaData', exifData); // Do something with your data!
 				}
 			});
 		} catch (error) {
 			console.log('Error: ' + error.message);
 		}//End of the try
-	}//End of the for loop
+	// }//End of the for loop
 console.log(imageExifData);
 
 });
