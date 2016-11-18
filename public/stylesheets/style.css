@@ -1,0 +1,21 @@
+body{
+	/*background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-94235.jpg");*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-color: #112;*/
+}
+
+#map {
+	margin: left;
+	margin-top: 30px;
+	height: 200px;
+	width: 500px;
+	display: block;
+ 	/*cursor: -webkit-zoom-in;*/
+	/*cursor: zoom-in;*/
+	position: relative;
+	/*transition: opacity .4s;*/
+	box-shadow: 10px 10px 5px black;
+	z-index: 20;
+}
+

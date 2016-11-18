@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "knex": "knex",
+    "start": "nodemon app.js"
   },
-  "name": "thomas-rulz",
+  "name": "picon.site",
   "version": "1.0.0",
   "description": "a thing",
   "main": "app.js",
@@ -14,14 +16,16 @@
     "ejs": "^2.5.2",
     "exif": "^0.6.0",
     "express": "^4.14.0",
-    "multer": "^1.2.0"
+    "knex": "^0.12.6",
+    "multer": "^1.2.0",
+    "pg": "^6.1.0"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/georgeeng/legendary.git"
   },
-  "author": "Your Name <thomas.gregory.jameson@gmail.com>",
+  "author": "George Eng, Thomas Gregory Jameson, Paraskevas Apostolopoulos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/georgeeng/legendary/issues"
