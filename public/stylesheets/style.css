@@ -1,8 +1,8 @@
 body{
-	background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-94235.jpg");
+	/*background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-94235.jpg");*/
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #112;
+	/*background-color: #112;*/
 }
 
 #map {
@@ -18,3 +18,4 @@ body{
 	box-shadow: 10px 10px 5px black;
 	z-index: 20;
 }
+
