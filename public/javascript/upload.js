@@ -1,5 +1,5 @@
 window.onload = function () {
-  console.log('inside');
+  // console.log('inside');
   var dropzone = $('.dropzone');
 
   dropzone.on('dragover', function(e) {
@@ -15,13 +15,13 @@ window.onload = function () {
   });
 
   dropzone.on('drop', function(e) {
-    console.log(e);
+    // console.log(e);
     e.stopPropagation();
     e.preventDefault();
     $(this).removeClass('dropzoneDrop');
 
     var files = e.originalEvent.dataTransfer.files;
-    console.log(Array.isArray(files));
+    // console.log(Array.isArray(files));
     for (var i = 0; i < files.length; i++) {
       var file = files[i];
       console.log(file);

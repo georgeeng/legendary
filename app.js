@@ -4,6 +4,8 @@ var routes = require("./routes/index")
 var cookieParser = require('cookie-parser')
 var cookieSession = require('cookie-session')
 var bodyParser = require('body-parser')
+var cloudinary = require('cloudinary');
+
 const PORT = 1337;
 
 app.use(bodyParser.urlencoded({
