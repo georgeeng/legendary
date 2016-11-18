@@ -15,20 +15,20 @@ window.onload = function () {
   });
 
   dropzone.on('drop', function(e) {
-<<<<<<< HEAD
-    // console.log(e);
-=======
->>>>>>> df8e3aa9c7c596571164211e955d4333ba22411d
-    e.stopPropagation();
-    e.preventDefault();
-    $(this).removeClass('dropzoneDrop');
-
-    var files = e.originalEvent.dataTransfer.files;
-<<<<<<< HEAD
-    // console.log(Array.isArray(files));
-=======
-    console.log(files);
->>>>>>> df8e3aa9c7c596571164211e955d4333ba22411d
+// <<<<<<< HEAD
+//     // console.log(e);
+// =======
+// >>>>>>> df8e3aa9c7c596571164211e955d4333ba22411d
+//     e.stopPropagation();
+//     e.preventDefault();
+//     $(this).removeClass('dropzoneDrop');
+//
+//     var files = e.originalEvent.dataTransfer.files;
+// <<<<<<< HEAD
+//     // console.log(Array.isArray(files));
+// =======
+//     console.log(files);
+// >>>>>>> df8e3aa9c7c596571164211e955d4333ba22411d
     for (var i = 0; i < files.length; i++) {
       console.log('------------FILE-----------------');
       var file = files[i];
